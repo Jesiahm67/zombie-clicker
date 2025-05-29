@@ -1,1 +1,22 @@
 @import "tailwindcss";
+@plugin "@iconify/tailwind4";
+
+main{  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Characters Zombie Weapons"
+    "Characters Zombie Weapons"
+    "Characters Zombie Weapons"
+    "Stats Stats Stats";
+}
+
+.Characters { grid-area: Characters; }
+
+.Zombie { grid-area: Zombie; }
+
+.Weapons { grid-area: Weapons; }
+
+.Stats { grid-area: Stats; }
