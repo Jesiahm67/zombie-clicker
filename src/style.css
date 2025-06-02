@@ -7,16 +7,17 @@ main{  display: grid;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Characters Zombie Weapons"
-    "Characters Zombie Weapons"
-    "Characters Zombie Weapons"
+    "Enchantments Zombie Weapons"
+    "Enchantments Zombie Weapons"
+    "Enchantments Zombie Weapons"
     "Stats Stats Stats";
 }
 
-.Characters { grid-area: Characters; }
+.Enchantments { grid-area: Enchantments; }
 
 .Zombie { grid-area: Zombie; }
 
 .Weapons { grid-area: Weapons; }
 
 .Stats { grid-area: Stats; }
+
