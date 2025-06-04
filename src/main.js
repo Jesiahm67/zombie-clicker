@@ -72,7 +72,7 @@ function buyFire() {
   console.log('Hi from buyFire')
   if (points >= 10000){
     // purchase axe
-    changePoint(-10000)
+    changePoint (-8000)
     fire = fire + 1
     fLevel.innerText = "level " + fire
   }
@@ -86,7 +86,7 @@ function buyLooting() {
   if (points >= 20000){
     // purchase sword
     changePoint(-20000)
-    sword = sword + 1
+    looting = looting + 1
     loLevel.innerText = "level " + looting
   }
   else{
