@@ -1,4 +1,4 @@
-let points = 100000
+let points = 10000
 
 let axe = 0
 
