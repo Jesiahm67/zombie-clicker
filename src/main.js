@@ -10,7 +10,7 @@ let fire = 0
 
 let looting = 0
 
-let unbreaking
+let unbreaking = 0
 
 let aLevel = document.getElementById("aLevel")
 
@@ -20,7 +20,7 @@ let shLevel = document.getElementById("shLevel")
 
 let fLevel = document.getElementById("fLevel")
 
-let loLevel = document.getElementById("lLevel")
+let loLevel = document.getElementById("loLevel")
 
 let unLevel = document.getElementById("unLevel")
 
@@ -33,75 +33,75 @@ function changePoint(amount) {
 }
 function buyAxe() {
   console.log('Hi from buyAxe')
-  if (points >= 10){
+  if (points >= 10) {
     // purchase axe
     changePoint(-10)
     axe = axe + 1
     aLevel.innerText = "level " + axe
   }
-  else{
+  else {
     alert("Get a job")
   }
 }
 
 function buySword() {
   console.log('Hi from buySword')
-  if (points >= 20){
+  if (points >= 20) {
     // purchase sword
     changePoint(-20)
     sword = sword + 1
     sLevel.innerText = "level " + sword
   }
-  else{
+  else {
     alert("Get a job")
   }
 }
 function buySharpness() {
   console.log('Hi from buySharpness')
-  if (points >= 4000){
-    // purchase sword
+  if (points >= 4000) {
+    // purchase sharpness
     changePoint(-4000)
     sharp = sharp + 1
     shLevel.innerText = "level " + sharp
   }
-  else{
+  else {
     alert("Get a job")
   }
 }
 function buyFire() {
   console.log('Hi from buyFire')
-  if (points >= 10000){
-    // purchase axe
-    changePoint (-8000)
+  if (points >= 10000) {
+    // purchase fire
+    changePoint(-10000)
     fire = fire + 1
     fLevel.innerText = "level " + fire
   }
-  else{
+  else {
     alert("Get a job")
   }
 }
 
 function buyLooting() {
   console.log('Hi from buyLooting')
-  if (points >= 20000){
-    // purchase sword
+  if (points >= 20000) {
+    // purchase looting
     changePoint(-20000)
     looting = looting + 1
     loLevel.innerText = "level " + looting
   }
-  else{
+  else {
     alert("Get a job")
   }
 }
 function buyUnbreaking() {
   console.log('Hi from buyUnbreaking')
-  if (points >= 40000){
-    // purchase sword
+  if (points >= 40000) {
+    // purchase unbreaking
     changePoint(-40000)
     unbreaking = unbreaking + 1
     unLevel.innerText = "level " + unbreaking
   }
-  else{
+  else {
     alert("Get a job")
   }
 }
