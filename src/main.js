@@ -1,3 +1,4 @@
+HEAD
 let points = 10000
 
 let axe = 0
@@ -28,7 +29,7 @@ function changePoint(amount) {
 
   points = points + amount
 
-  document.getElementById("points").innerText = points + " Diamonds"
+  document.getElementById("points").innerText = points.toFixed(0) + " Diamonds"
 
 }
 function buyAxe() {
@@ -107,5 +108,8 @@ function buyUnbreaking() {
 }
 
 function bigclick() {
-  
+
+  let basePoint = 1 + (axe ** 1.05) + (sword ** 1.5)
+
+  changePoint(basePoint)
 }
