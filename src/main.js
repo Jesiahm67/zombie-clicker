@@ -1,9 +1,12 @@
-HEAD
-let points = 10000
+let points = 1000000
 
 let axe = 0
 
 let sword = 0
+
+let pickaxe = 0
+
+let bow = 0
 
 let sharp = 0
 
