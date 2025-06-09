@@ -105,3 +105,7 @@ function buyUnbreaking() {
     alert("Get a job")
   }
 }
+
+function bigclick() {
+  
+}
