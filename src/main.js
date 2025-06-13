@@ -4,9 +4,9 @@ let axe = 0
 
 let sword = 0
 
-let pickaxe = 0
-
 let bow = 0
+
+let pickaxe = 0
 
 let sharp = 0
 
@@ -19,6 +19,10 @@ let unbreaking = 0
 let aLevel = document.getElementById("aLevel")
 
 let sLevel = document.getElementById("sLevel")
+
+let bLevel = document.getElementById("bLevel")
+
+let pLevel = document.getElementById("pLevel")
 
 let shLevel = document.getElementById("shLevel")
 
@@ -55,6 +59,30 @@ function buySword() {
     changePoint(-20)
     sword = sword + 1
     sLevel.innerText = "level " + sword
+  }
+  else {
+    alert("Get a job")
+  }
+}
+function buyBow() {
+  console.log('Hi from buySword')
+  if (points >= 50) {
+    // purchase sword
+    changePoint(-50)
+    bow = bow + 1
+    bLevel.innerText = "level " + bow
+  }
+  else {
+    alert("Get a job")
+  }
+}
+function buyPickaxe() {
+  console.log('Hi from buyPickaxe')
+  if (points >= 100) {
+    // purchase sword
+    changePoint(-100)
+    pickaxe = pickaxe + 1
+    pLevel.innerText = "level " + pickaxe
   }
   else {
     alert("Get a job")
