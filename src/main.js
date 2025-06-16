@@ -144,3 +144,7 @@ function bigClick() {
 
   changePoint(basePoint)
 }
+export default defineConfig({
+  base: '/zombie-clicker/', // <-- This should match your repo name
+  // other config...
+})
