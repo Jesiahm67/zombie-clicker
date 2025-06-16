@@ -38,7 +38,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        run: npm run build --base=/zombie-clicker/
+        run: npm run build
+        with:
+          BASE_URL: '/zombie-clicker/'
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
