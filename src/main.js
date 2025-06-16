@@ -138,7 +138,7 @@ function buyUnbreaking() {
   }
 }
 
-function bigclick() {
+function bigClick() {
 
   let basePoint = 1 + (axe ** 1.05) + (sword ** 1.5)
 
